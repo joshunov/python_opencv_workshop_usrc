@@ -2,9 +2,10 @@ import cv2
 import numpy
 
 #reading images
-img = cv2.imread('..\Photos\cat.jpg')
+img = cv2.imread('Photos/cat.jpg')
 cv2.imshow('Cat', img)
 
+'''
 # reading videos
 
 capture = cv2.VideoCapture('..\Videos\dog.mp4')
@@ -20,8 +21,7 @@ while True:
     #if the d key is pressed, kill screen
     if cv2.waitKey(20) & 0xFF==ord('d'):
         break
-
-capture.release()
-cv2.destroyAllWindows()
+'''
 
 cv2.waitKey(0)
+cv2.destroyAllWindows()
